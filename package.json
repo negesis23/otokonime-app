@@ -1,0 +1,21 @@
+{
+ "name": "otokonime_",
+ "version": "0.1.0",
+ "private": true,
+ "scripts": {
+  "serve": "vue-cli-service serve",
+  "build": "vue-cli-service build"
+ },
+ "dependencies": {
+  "core-js": "^3.6.5",
+  "dom7": "^4.0.6",
+  "framework7": "latest",
+  "framework7-vue": "latest",
+  "material-icons": "^1.13.12"
+ },
+ "devDependencies": {
+  "@vue/cli-service": "^5.0.8",
+  "@vue/compiler-sfc": "^3.3.4",
+  "vue": "3.2.13"
+ }
+}
