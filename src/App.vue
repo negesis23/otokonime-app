@@ -1,5 +1,5 @@
 <template>
- <f7-app name="Otokonime" :routes="routes" theme="md" darkMode="auto">
+ <f7-app v-bind="f7Params">
   <f7-view main url="/" />
  </f7-app>
 </template>
@@ -10,4 +10,12 @@
   f7View
  } from 'framework7-vue';
  import routes from './routes';
+
+ const f7Params = {
+  name: 'Otokonime',
+  theme: 'md',
+  darkMode: 'auto',
+  routes,
+ }
+
 </script>

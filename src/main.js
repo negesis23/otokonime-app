@@ -7,9 +7,8 @@ import Framework7Vue, {
  f7Navbar,
  f7BlockTitle,
  f7Block,
- f7Button,
 } from 'framework7-vue';
-import 'framework7/css';
+import 'framework7/css/bundle';
 import 'material-icons/iconfont/filled.css';
 
 Framework7.use(Framework7Vue);
@@ -23,6 +22,5 @@ app
 .component('f7-navbar', f7Navbar)
 .component('f7-block-title', f7BlockTitle)
 .component('f7-block', f7Block)
-.component('f7-button', f7Button)
 
 .mount('#app');
