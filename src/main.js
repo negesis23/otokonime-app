@@ -10,7 +10,7 @@ import 'material-icons/iconfont/filled.css';
 
 Framework7.use(Framework7Vue);
 
-import './App.css';
+import './assets/css/app.css';
 
 import App from './App.vue';
 

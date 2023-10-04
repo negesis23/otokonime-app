@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
  font-family: 'Google Sans';
  src: url('./assets/fonts/GoogleSans-MediumItalic.eot');
  src: local('Google Sans Medium Italic'), local('GoogleSans-MediumItalic'),
@@ -68,13 +68,13 @@
  url('./assets/fonts/GoogleSans-BoldItalic.ttf') format('truetype');
  font-weight: bold;
  font-style: italic;
-}
+} */
 
 
 * {
  user-select: none;
 }
 
-:root {
+/* :root {
  --f7-font-family: 'Google Sans', Roboto, system-ui, Noto, Helvetica, Arial, sans-serif;
-}
+} */
