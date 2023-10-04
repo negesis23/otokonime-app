@@ -14,7 +14,7 @@
  const f7Params = {
   name: 'Otokonime',
   theme: 'md',
-  darkMode: 'auto',
+  dark: true,
   routes,
  }
 
