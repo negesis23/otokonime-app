@@ -1,7 +1,6 @@
 {
   "appId": "io.framework7.otokonime",
   "appName": "Otokonime",
-  "bundledWebRuntime": false,
-  "webDir": "public"
+  "webDir": "dist"
 }
 
