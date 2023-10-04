@@ -32,7 +32,10 @@ jobs:
           node-version: 19.x
 
       - name: install dependencies
-        run: npm ci
+        run: npm i
+
+      - name: Install Capacitor
+        run: npm install @capacitor/core @capacitor/cli @capacitor/android
 
       - name: Create Build Folder
         run: npm run build
