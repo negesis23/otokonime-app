@@ -35,7 +35,7 @@ jobs:
         run: npm i
 
       - name: Install Capacitor
-        run: npm install @capacitor/core @capacitor/cli @capacitor/android
+        run: npm install -D @capacitor/cli
 
       - name: Create Build Folder
         run: npm run build
@@ -46,8 +46,8 @@ jobs:
       - name: Capacitor update
         run: npx cap update
 
-      - name: Capacitor copy
-        run: npx cap copy
+      - name: Capacitor sync
+        run: npx cap sync
       
       # TODO: Check for folder structure in README for generating splash screen 
       - name: Generate icons and splash screen to android folder 
