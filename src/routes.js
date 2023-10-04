@@ -7,6 +7,9 @@ export default [{
  {
   path: "/about/",
   asyncComponent: () => import("./pages/About.vue"),
+  options: {
+   animate: false
+  }
  },
  {
   path: "(.*)",

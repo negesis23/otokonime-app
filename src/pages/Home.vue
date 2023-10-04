@@ -12,12 +12,3 @@
 
  </f7-page>
 </template>
-
-<script setup>
- import {
-  f7List,
-  f7ListItem,
-  f7Button,
- } from 'framework7-vue';
-
-</script>
