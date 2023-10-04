@@ -14,6 +14,7 @@ import 'material-icons/iconfont/filled.css';
 Framework7.use(Framework7Vue);
 
 import App from './App.vue';
+import './App.css';
 
 const app = createApp(App);
 

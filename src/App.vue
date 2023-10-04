@@ -19,9 +19,3 @@
  }
 
 </script>
-
-<style scoped>
-* {
-  user-select: none;
-}
-</style>
