@@ -1,6 +1,6 @@
 {
   "appId": "io.framework7.otokonime",
   "appName": "Otokonime",
-  "webDir": "dist"
+  "webDir": "www"
 }
 
