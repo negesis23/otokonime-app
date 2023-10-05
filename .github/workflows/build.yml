@@ -30,7 +30,7 @@ jobs:
         run: npm i --force
 
       - name: Install Capacitor
-        run: npm install -D @capacitor/cli
+        run: npm install -D @capacitor/cli @capacitor/assets
 
       - name: Create Build Folder
         run: npm run build
@@ -44,16 +44,16 @@ jobs:
       - name: Capacitor sync
         run: npx cap sync
        
-      - name: Generate icons and splash screen to android folder 
-        run:  if [ -d "./resources" ]; then npm install @capacitor/assets --save-dev && npx capacitor-assets generate --android; fi
+      - name: Generate icons and splash screen
+        run:  if [ -d "./resources" ]; then npx capacitor-assets generate --android; fi
         
-      - name: Build app bundle
-        run: cd android && ./gradlew assembleDebug
+      - name: Gradle build
+        run: mv debug.keystore $HOME/.android/debug.keystore && cd android && ./gradlew assembleDebug
 
-      - name: Check folder content of android output
+      - name: Check output
         run: ls ./android/app/build/outputs/apk/debug
 
-      - name: Upload debug APK
+      - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: app-debug

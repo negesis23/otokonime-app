@@ -3,7 +3,7 @@ import routes from './routes';
 const f7Params = {
  name: 'Otokonime',
  theme: 'md',
- darkMode: 'auto',
+ darkMode: true,
  colors: {
   primary: '#6A3DE8'
  },
