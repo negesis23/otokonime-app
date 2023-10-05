@@ -32,7 +32,7 @@ jobs:
       - name: Install Capacitor
         run: npm install -D @capacitor/cli @capacitor/assets
 
-      - name: Create Build Folder
+      - name: Build app
         run: npm run build
 
       - name: Add android folder if not present
@@ -47,8 +47,8 @@ jobs:
       - name: Generate icons and splash screen
         run:  if [ -d "./resources" ]; then npx capacitor-assets generate --android; fi
         
-      - name: Gradle build
-        run: mv debug.keystore $HOME/.android/debug.keystore && cd android && ./gradlew assembleDebug
+      - name: Gradle build Apk
+        run: ls && mv ./debug.keystore ~/.android/debug.keystore && cd android && ./gradlew assembleDebug
 
       - name: Check output
         run: ls ./android/app/build/outputs/apk/debug
