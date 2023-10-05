@@ -1,4 +1,4 @@
-import Home from "./pages/Home.vue";
+import Home from "./pages/Home";
 
 export default [{
  path: "/",
@@ -6,10 +6,10 @@ export default [{
 },
  {
   path: "/about/",
-  asyncComponent: () => import("./pages/About.vue"),
+  asyncComponent: () => import("./pages/About"),
  },
  {
   path: "(.*)",
-  asyncComponent: () => import("./pages/404.vue"),
+  asyncComponent: () => import("./pages/404"),
  },
 ];

@@ -7,12 +7,10 @@ import Framework7Vue, {
 } from 'framework7-vue/bundle';
 import 'framework7/css/bundle';
 import 'material-icons/iconfont/filled.css';
-
 Framework7.use(Framework7Vue);
 
-import './assets/css/app.css';
-
-import App from './App.vue';
+import './app.css'
+import App from './App';
 
 const app = createApp(App);
 
