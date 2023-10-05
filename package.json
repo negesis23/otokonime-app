@@ -8,10 +8,10 @@
  },
  "dependencies": {
   "@capacitor/android": "^5.4.1",
-  "@capacitor/app": "^5.0.6",
   "@capacitor/core": "^5.4.1",
   "@capacitor/splash-screen": "^5.0.6",
   "@capacitor/status-bar": "^5.0.6",
+  "@robingenz/capacitor-android-dark-mode-support": "^1.0.1",
   "dom7": "^4.0.6",
   "framework7": "latest",
   "framework7-vue": "latest",
@@ -22,5 +22,9 @@
   "@vue/cli-plugin-babel": "^5.0.8",
   "@vue/cli-service": "^5.0.8"
  },
- "browserslist": ["> 1%", "last 2 versions", "not dead"]
+ "browserslist": [
+  "> 1%",
+  "last 2 versions",
+  "not dead"
+ ]
 }

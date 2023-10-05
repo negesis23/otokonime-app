@@ -8,13 +8,10 @@ const f7Params = {
   primary: '#6A3DE8'
  },
  routes,
- touch: {
-  //disableContextMenu: true,
- },
  statusbar: {
   iosOverlaysWebView: true,
   androidOverlaysWebView: false,
-  androidBackgroundColor: '#00000000',
+  androidBackgroundColor: '#000000',
  }
 }
 
