@@ -27,7 +27,7 @@ jobs:
           node-version: 19.x
 
       - name: install dependencies
-        run: npm i
+        run: npm i --force
 
       - name: Install Capacitor
         run: npm install -D @capacitor/cli
