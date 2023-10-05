@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Otokonime</string>
+    <string name="title_activity_main">Otokonime</string>
+    <string name="package_name">io.framework7.otokonime</string>
+    <string name="custom_url_scheme">io.framework7.otokonime</string>
+</resources>
