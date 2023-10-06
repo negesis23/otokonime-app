@@ -6,6 +6,7 @@ export default [{
 },
  {
   path: "/about/",
+  name: 'about',
   asyncComponent: () => import("./pages/About"),
  },
  {
