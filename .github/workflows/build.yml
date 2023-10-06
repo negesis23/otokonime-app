@@ -39,7 +39,7 @@ jobs:
         run: if [ ! -d "./android" ]; then npx cap add android; fi
 
       - name: Capacitor update
-         run: npx cap update
+        run: npx cap update
 
       - name: Capacitor sync
         run: npx cap sync
