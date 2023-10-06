@@ -31,7 +31,7 @@ export default {
     enabled: true,
     iosOverlaysWebView: true,
     androidOverlaysWebView: false,
-    androidBackgroundColor: '#252329',
+    androidBackgroundColor: '#1C1B1E',
     androidTextColor: 'white',
    }
   }
