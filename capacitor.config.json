@@ -6,7 +6,10 @@
  "webDir": "dist",
  "plugins": {
   "SplashScreen": {
-   "backgroundColor": "#000000"
+   "launchAutoHide": false,
+   "backgroundColor": "#1C1B1E",
+   "splashFullScreen": true,
+   "splashImmersive": true
   }
  },
  "cordova": {}

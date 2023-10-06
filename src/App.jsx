@@ -9,6 +9,14 @@ import {
 } from 'framework7-vue';
 import capacitorApp from './utils/capacitor-app.js';
 
+import {
+ Plugins
+} from '@capacitor/core';
+const {
+ SplashScreen
+} = Plugins;
+
+SplashScreen.hide();
 
 export default defineComponent({
  setup() {
@@ -25,7 +33,7 @@ export default defineComponent({
     enabled: true,
     iosOverlaysWebView: true,
     androidOverlaysWebView: false,
-    androidBackgroundColor: '#161220',
+    androidBackgroundColor: '#1C1B1E',
     androidTextColor: 'white',
    }
   }
