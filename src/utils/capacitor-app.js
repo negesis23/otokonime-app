@@ -6,9 +6,12 @@ var capacitorApp = {
  handleSplashscreen: function () {
   var f7 = capacitorApp.f7;
   if (!window.Capacitor) return;
-  if (window.Capacitor.Plugins && window.Capacitor.Plugins.SplashScreen) {
-   window.Capacitor.Plugins.SplashScreen.hide();
-  }
+  setTimeout(() => {
+   if (window.Capacitor.Plugins && window.Capacitor.Plugins.SplashScreen) {
+    window.Capacitor.Plugins.SplashScreen.hide();
+   }
+  },
+   2000);
  },
  /*
   This method prevents back button tap to exit from app on android.
@@ -72,6 +75,20 @@ var capacitorApp = {
 
     if ($('.panel.panel-in').length) {
      f7.panel.close('.panel.panel-in');
+     return;
+    }
+
+    // Check if you are on the homepage
+    if (currentView.router.url === '/') {
+     // Show a confirmation dialog
+     f7.dialog.confirm(
+      'Are you sure you want to exit the app?',
+      'Exit',
+      function () {
+       // If the user confirms, exit the app
+       window.Capacitor.Plugins.App.exitApp();
+      }
+     );
      return;
     }
    },

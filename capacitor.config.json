@@ -10,7 +10,7 @@
    "launchAutoHide": true,
    "backgroundColor": "#1C1B1E",
    "androidScaleType": "CENTER_CROP",
-   "androidSpinnerStyle": "small",
+   "androidSpinnerStyle": "large",
    "spinnerColor": "#CCBDFF",
    "showSpinner": true,
    "splashFullScreen": true,
