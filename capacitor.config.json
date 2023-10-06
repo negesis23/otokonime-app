@@ -1,12 +1,11 @@
 {
  "appId": "io.framework7.otokonime",
  "appName": "Otokonime",
- "bundledWebRuntime": false,
  "npmClient": "npm",
  "webDir": "dist",
  "plugins": {
   "SplashScreen": {
-   "launchShowDuration": 5000,
+   "launchShowDuration": 3600,
    "launchAutoHide": true,
    "backgroundColor": "#1C1B1E",
    "androidScaleType": "CENTER_CROP",
