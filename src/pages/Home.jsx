@@ -1,6 +1,12 @@
+import {
+ f7
+} from 'framework7-vue';
+
 export default () => {
 
- const buttonOnclick = () => alert('Alert');
+ const buttonOnclick = () => {
+  f7.dialog.alert('Alert dialog');
+ }
 
  return (
   <f7-page>

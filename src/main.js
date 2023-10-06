@@ -9,6 +9,15 @@ import 'framework7/css/bundle';
 import 'material-icons/iconfont/filled.css';
 Framework7.use(Framework7Vue);
 
+import {
+ Plugins
+} from '@capacitor/core';
+const {
+ SplashScreen
+} = Plugins;
+
+SplashScreen.hide();
+
 import './app.css'
 import App from './App';
 

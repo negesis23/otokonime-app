@@ -1,25 +1,19 @@
 import routes from './routes';
 import {
- defineComponent,
  onMounted
 } from 'vue';
 import {
  f7,
  f7ready
 } from 'framework7-vue';
+import {
+ getDevice
+} from 'framework7/lite-bundle';
 import capacitorApp from './utils/capacitor-app.js';
 
-import {
- Plugins
-} from '@capacitor/core';
-const {
- SplashScreen
-} = Plugins;
-
-SplashScreen.hide();
-
-export default defineComponent({
+export default {
  setup() {
+  const device = getDevice();
 
   const f7Params = {
    name: 'Otokonime',
@@ -29,18 +23,24 @@ export default defineComponent({
     primary: '#6A3DE8'
    },
    routes,
+   input: {
+    scrollIntoViewOnFocus: device.capacitor,
+    scrollIntoViewCentered: device.capacitor,
+   },
    statusbar: {
     enabled: true,
     iosOverlaysWebView: true,
     androidOverlaysWebView: false,
-    androidBackgroundColor: '#1C1B1E',
+    androidBackgroundColor: '#252329',
     androidTextColor: 'white',
    }
   }
 
   onMounted(() => {
    f7ready(() => {
-    capacitorApp.init(f7);
+    if (device.capacitor) {
+     capacitorApp.init(f7);
+    }
    });
   });
 
@@ -50,4 +50,4 @@ export default defineComponent({
  </f7-app>
   )
  }
-});
+};
