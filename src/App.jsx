@@ -1,6 +1,5 @@
 import routes from './routes';
 import {
- defineComponent,
  onMounted
 } from 'vue';
 import {
@@ -12,7 +11,7 @@ import {
 } from 'framework7/lite-bundle';
 import capacitorApp from './utils/capacitor-app.js';
 
-export default defineComponent({
+export default {
  setup() {
   const device = getDevice();
 
@@ -51,4 +50,4 @@ export default defineComponent({
  </f7-app>
   )
  }
-});
+};
