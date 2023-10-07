@@ -23,9 +23,6 @@ export default {
     primary: '#6A3DE8'
    },
    routes,
-   touch: {
-    disableContextMenu: true
-   },
    input: {
     scrollIntoViewOnFocus: device.capacitor,
     scrollIntoViewCentered: device.capacitor,
@@ -49,8 +46,15 @@ export default {
 
   return () => (
    <f7-app {...f7Params}>
-     <f7-view main url="/" className="safe-areas"></f7-view>
-   </f7-app>
-  )
+ <f7-views tabs>
+ 
+ 
+ <f7-view tab id="home" url="/"></f7-view>
+ <f7-view tab id="d" url="/chat/" tab-active main></f7-view>
+ <f7-view tab id="t" url="/404/"></f7-view>
+ 
+ </f7-views>
+ </f7-app>
+  );
  }
 };

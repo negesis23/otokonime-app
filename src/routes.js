@@ -5,9 +5,8 @@ export default [{
  component: Home,
 },
  {
-  path: "/about/",
-  name: 'about',
-  asyncComponent: () => import("./pages/About"),
+  path: "/chat/",
+  asyncComponent: () => import("./pages/Chat.vue"),
  },
  {
   path: "(.*)",
