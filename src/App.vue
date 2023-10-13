@@ -39,7 +39,7 @@
  const f7Params = {
   name: 'Otokonime',
   theme: 'md',
-  darkMode: true,
+  darkMode: false,
   colors: {
    primary: '#6A3DE8'
   },

@@ -1,20 +1,16 @@
 <template>
  <f7-page>
-  <f7-block>
-   <h1><a href="/"><span style="color: var(--f7-text-color)">Otoko</span>nime</a></h1>
-  </f7-block>
 
-  <f7-block-title medium>Seasons</f7-block-title>
+  <f7-block-title medium style="color: var(--f7-text-color);">Musim</f7-block-title>
   <f7-block>
    <swiper-container
     :space-between="12"
     :slides-per-view="3">
     <swiper-slide v-for='_ in seasons'>
-     <f7-button round tonal>{{_.genreName}}</f7-button>
+     <f7-button round small tonal>{{_.genreName}}</f7-button>
     </swiper-slide>
    </swiper-container>
   </f7-block>
-
 
 
   <f7-block-title medium style="
@@ -22,18 +18,34 @@
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   color: var(--f7-text-color);
    ">
    <div>
-    Currently Airing
+    Sedang Berlangsung
    </div>
-   <f7-link style="color: var(--f7-text-color); font-weight: normal; font-size: var(--f7-text-size)">
-    See All
-   </f7-link>
+   <small>
+    <f7-link>
+     Lihat semua
+    </f7-link>
+   </small>
   </f7-block-title>
   <OngoingAnime />
 
-  <f7-block-title medium>
-   Finished Airing
+  <f7-block-title medium style="
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--f7-text-color);
+   ">
+   <div>
+    Berakhir / Selesai
+   </div>
+   <small>
+    <f7-link>
+     Lihat semua
+    </f7-link>
+   </small>
   </f7-block-title>
   <OngoingAnime />
 
