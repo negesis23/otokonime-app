@@ -32,14 +32,16 @@
   getDevice
  } from 'framework7/lite-bundle';
  import routes from './routes';
- import capacitorApp from './utils/capacitor-app.js';
+ import capacitorApp from './utils/capacitor-app';
+ import Theme from './utils/theme';
 
+ const theme = Theme.extractThemeSearch();
  const device = getDevice();
 
  const f7Params = {
   name: 'Otokonime',
-  theme: 'md',
-  darkMode: 'auto',
+  theme,
+  // darkMode: 'auto',
   colors: {
    primary: '#6A3DE8'
   },
@@ -62,6 +64,7 @@
 
  onMounted(() => {
   f7ready(() => {
+   Theme.init();
    if (device.capacitor) {
     capacitorApp.init(f7);
    }
