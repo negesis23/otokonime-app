@@ -5,17 +5,20 @@
     <f7-link tab-link="#home" tab-link-active>
      <f7-icon material="home"></f7-icon>
     </f7-link>
-    <f7-link tab-link="#d">
+    <f7-link tab-link="#explore">
      <f7-icon material="explore"></f7-icon>
     </f7-link>
-    <f7-link tab-link="#t">
-     <f7-icon material="folder_special"></f7-icon>
+    <f7-link tab-link="#favorites">
+     <f7-icon material="favorite"></f7-icon>
+    </f7-link>
+    <f7-link tab-link="#favorites">
+     <f7-icon material="settings"></f7-icon>
     </f7-link>
    </f7-toolbar>
 
    <f7-view tab id="home" url="/" tab-active main></f7-view>
-   <f7-view tab id="d" url="/about/"></f7-view>
-   <f7-view tab id="t" url="/404/"></f7-view>
+   <f7-view tab id="explore" url="/explore/"></f7-view>
+   <f7-view tab id="favorites" url="/favorites/"></f7-view>
   </f7-views>
  </f7-app>
 </template>
@@ -33,15 +36,13 @@
  } from 'framework7/lite-bundle';
  import routes from './routes';
  import capacitorApp from './utils/capacitor-app';
- import Theme from './utils/theme';
 
- const theme = Theme.extractThemeSearch();
  const device = getDevice();
 
  const f7Params = {
   name: 'Otokonime',
-  theme,
-  // darkMode: 'auto',
+  theme: 'md',
+  darkMode: true,
   colors: {
    primary: '#6A3DE8'
   },
@@ -64,7 +65,6 @@
 
  onMounted(() => {
   f7ready(() => {
-   Theme.init();
    if (device.capacitor) {
     capacitorApp.init(f7);
    }

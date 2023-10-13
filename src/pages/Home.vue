@@ -1,6 +1,6 @@
 <template>
  <f7-page>
-  <BlockTitle title="Musim / Season" />
+  <BlockTitle title="Seasons" />
   <f7-block>
    <swiper-container
     :space-between="12"
@@ -11,13 +11,12 @@
    </swiper-container>
   </f7-block>
 
-  <BlockTitle title="Sedang Berlangsung" link />
+  <BlockTitle title="Currently Airing" link />
   <OngoingAnime />
 
 
-  <BlockTitle title="Berakhir / Selesai" link />
+  <BlockTitle title="Finished Airing" link />
   <OngoingAnime />
-
 
  </f7-page>
 </template>

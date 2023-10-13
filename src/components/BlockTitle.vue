@@ -4,7 +4,7 @@
    {{title}}
   </h2>
   <f7-link v-if="link" color="primary" :href="linkHref" class="text-sm">
-   {{linkText || 'Lihat semua'}}
+   {{linkText || 'Show all'}}
   </f7-link>
  </f7-block-title>
 </template>

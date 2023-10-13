@@ -5,9 +5,15 @@ export default [{
  component: Home,
 },
  {
-  path: "/about/",
-  asyncComponent: () => import("./pages/About.vue"),
+  path: "/explore/",
+  asyncComponent: () => import("./pages/Explore.vue"),
  },
+ {
+  path: "/favorites/",
+  asyncComponent: () => import("./pages/Favorites.vue"),
+ },
+
+
  {
   path: "(.*)",
   asyncComponent: () => import("./pages/404"),
