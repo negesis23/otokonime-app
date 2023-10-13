@@ -3,7 +3,7 @@
   <f7-views tabs>
    <f7-toolbar bottom tabbar>
     <f7-link tab-link="#home" tab-link-active>
-     <f7-icon material="home_filled"></f7-icon>
+     <f7-icon material="home"></f7-icon>
     </f7-link>
     <f7-link tab-link="#d">
      <f7-icon material="explore"></f7-icon>
@@ -39,11 +39,14 @@
  const f7Params = {
   name: 'Otokonime',
   theme: 'md',
-  darkMode: false,
+  darkMode: 'auto',
   colors: {
    primary: '#6A3DE8'
   },
   routes,
+  touch: {
+   iosTouchRipple: true
+  },
   input: {
    scrollIntoViewOnFocus: device.capacitor,
    scrollIntoViewCentered: device.capacitor,
