@@ -1,12 +1,12 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home.vue";
 
 export default [{
  path: "/",
  component: Home,
 },
  {
-  path: "/chat/",
-  asyncComponent: () => import("./pages/Chat.vue"),
+  path: "/about/",
+  asyncComponent: () => import("./pages/About.vue"),
  },
  {
   path: "(.*)",

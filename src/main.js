@@ -9,8 +9,9 @@ import 'framework7/css/bundle';
 import 'material-icons/iconfont/filled.css';
 Framework7.use(Framework7Vue);
 
+
 import './app.css'
-import App from './App';
+import App from './App.vue';
 
 const app = createApp(App);
 
