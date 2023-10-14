@@ -11,9 +11,6 @@
     <f7-link tab-link="#favorites">
      <f7-icon material="favorite"></f7-icon>
     </f7-link>
-    <f7-link tab-link="#favorites">
-     <f7-icon material="settings"></f7-icon>
-    </f7-link>
    </f7-toolbar>
 
    <f7-view tab id="home" url="/" tab-active main></f7-view>
@@ -42,7 +39,7 @@
  const f7Params = {
   name: 'Otokonime',
   theme: 'md',
-  darkMode: false,
+  darkMode: 'auto',
   colors: {
    primary: '#126C00'
   },
@@ -58,7 +55,7 @@
    enabled: true,
    iosOverlaysWebView: true,
    androidOverlaysWebView: false,
-   androidBackgroundColor: '#1C1B1E',
+   androidBackgroundColor: '#1A1C18',
    androidTextColor: 'white',
   }
  }

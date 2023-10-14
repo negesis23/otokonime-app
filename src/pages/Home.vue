@@ -6,7 +6,7 @@
     :space-between="12"
     :slides-per-view="3">
     <swiper-slide v-for='_ in seasons'>
-     <f7-button round small fill>{{_.genreName}}</f7-button>
+     <f7-button round small tonal>{{_.genreName}}</f7-button>
     </swiper-slide>
    </swiper-container>
   </f7-block>
