@@ -45,7 +45,7 @@ jobs:
         run: npx cap sync
        
       - name: Generate icons and splash screen
-        run:  if [ -d "./resources" ]; then npx capacitor-assets generate --splashBackgroundColor '#EAF2E2' --splashBackgroundColorDark '#222B1F' --android; fi
+        run:  if [ -d "./resources" ]; then npx capacitor-assets generate --splashBackgroundColor '#FDFDF6' --splashBackgroundColorDark '#1A1C18' --android; fi
         
       - name: Gradle build APK
         run: cd android && ./gradlew assembleDebug
