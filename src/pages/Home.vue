@@ -1,22 +1,22 @@
 <template>
  <f7-page>
-  <BlockTitle title="Seasons" />
+  <BlockTitle title="Musim / Season" />
   <f7-block>
    <swiper-container
     :space-between="12"
     :slides-per-view="3">
     <swiper-slide v-for='_ in seasons'>
-     <f7-button round small tonal>{{_.genreName}}</f7-button>
+     <f7-button round small fill>{{_.genreName}}</f7-button>
     </swiper-slide>
    </swiper-container>
   </f7-block>
 
-  <BlockTitle title="Currently Airing" link />
+  <BlockTitle title="Sedang Berlangung" link />
   <OngoingAnime />
 
 
-  <BlockTitle title="Finished Airing" link />
-  <OngoingAnime />
+  <BlockTitle title="Berakhir / Selesai" link />
+  <FinishedAnime />
 
  </f7-page>
 </template>
@@ -25,6 +25,7 @@
 <script setup>
  import BlockTitle from '../components/BlockTitle.vue';
  import OngoingAnime from '../components/OngoingAnime.vue';
+ import FinishedAnime from '../components/FinishedAnime.vue';
 
  const seasons = [{
   "genreName": "Fall 1993",

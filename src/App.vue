@@ -44,7 +44,7 @@
   theme: 'md',
   darkMode: true,
   colors: {
-   primary: '#6A3DE8'
+   primary: '#126C00'
   },
   routes,
   touch: {
