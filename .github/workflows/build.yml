@@ -50,19 +50,6 @@ jobs:
       - name: Gradle build APK
         run: cd android && ./gradlew assembleDebug
         
-      - name: Generate debug.keystore
-        run: |
-         keytool -genkey -v -keystore android/app/debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
-        
-      - name: Sign debug build
-        run: jarsigner -keystore android/app/debug.keystore -storepass android -keypass android -digestalg SHA1 -sigalg MD5withRSA -signedjar ./android/app/build/outputs/apk/debug/app-debug-signed.apk ./android/app/build/outputs/apk/debug/app-debug.apk androiddebugkey
-
-      - name: Verify signed APK
-        run: jarsigner -verify -verbose -certs ./android/app/build/outputs/apk/debug/app-debug-signed.apk
-
-      - name: Move signed APK to proper location
-        run: mv ./android/app/build/outputs/apk/debug/app-debug-signed.apk ./android/app/build/outputs/apk/debug/app-debug.apk
-        
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:

@@ -16,5 +16,13 @@
    "splashImmersive": true
   }
  },
+ "android": {
+  "buildOptions": {
+   "keystorePath": "./debug.keystore",
+   "keystoreAlias": "androiddebugkey",
+   "keystorePassword": "android",
+   "keystoreAliasPassword": "android"
+  }
+ },
  "cordova": {}
 }
