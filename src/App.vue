@@ -54,7 +54,7 @@
    enabled: true,
    iosOverlaysWebView: true,
    androidOverlaysWebView: false,
-   androidBackgroundColor: '#1A1C18',
+   androidBackgroundColor: '#1D1D1D',
    androidTextColor: 'white',
   }
  }

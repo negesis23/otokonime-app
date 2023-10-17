@@ -5,13 +5,13 @@
  "webDir": "dist",
  "plugins": {
   "SplashScreen": {
-   "launchShowDuration": 3000,
+   "launchShowDuration": 3500,
    "launchAutoHide": true,
-   "backgroundColor": "#1C1B1E",
+   "backgroundColor": "#121214",
    "androidScaleType": "CENTER_CROP",
    "androidSpinnerStyle": "large",
-   "spinnerColor": "#CCBDFF",
-   "showSpinner": true,
+   "spinnerColor": "#FFFFFF",
+   "showSpinner": false,
    "splashFullScreen": true,
    "splashImmersive": true
   }
@@ -20,8 +20,7 @@
   "buildOptions": {
    "keystorePath": "../../debug.keystore",
    "keystoreAlias": "androiddebugkey",
-   "keystorePassword": "android",
-   "keystoreAliasPassword": "android"
+   "keystorePassword": "android"
   }
  },
  "cordova": {}
