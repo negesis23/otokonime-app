@@ -32,6 +32,7 @@
   getDevice
  } from 'framework7/lite-bundle';
  import routes from './routes';
+ import store from './store';
  import capacitorApp from './utils/capacitor-app';
 
  const device = getDevice();
@@ -39,14 +40,12 @@
  const f7Params = {
   name: 'Otokonime',
   theme: 'md',
-  darkMode: 'auto',
+  darkMode: store.state.isDark,
   colors: {
-   primary: '#126C00'
+  // primary: '#126C00'
   },
   routes,
-  touch: {
-   iosTouchRipple: true
-  },
+  store,
   input: {
    scrollIntoViewOnFocus: device.capacitor,
    scrollIntoViewCentered: device.capacitor,

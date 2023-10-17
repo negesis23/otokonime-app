@@ -1,19 +1,30 @@
 <template>
  <f7-block>
   <swiper-container
-   :space-between="18"
+   :space-between="19"
    :slides-per-view="2">
    <swiper-slide v-for="_ in finished">
-    <a class="relative group flex flex-col gap-3">
-     <div class="relative overflow-hidden aspect-[9/12.5] rounded-2xl p-1.5">
-      <img :src="_.image" :alt="_.title" class="object-cover w-full h-full absolute inset-0 transition duration-200 ease-in-out transform group-hover:scale-105 group-hover:-rotate-1" loading="lazy" />
-      <f7-chip>
-       <span class="text-lg">★</span>
-       {{_.episode}}</f7-chip>
+    <a
+     :href="_.animeId"
+     class="group flex flex-col gap-2">
+     <div class="relative overflow-hidden h-52 rounded-xl">
+      <img
+      :src="_.image"
+      :alt="_.title"
+      class="object-cover w-full h-full absolute inset-0 transition duration-200 group-hover:scale-105"
+      loading="lazy" />
      </div>
-     <h3 class="font-medium line-clamp-2">
-      {{_.title}}
-     </h3>
+     <div class="ripple relative overflow-hidden flex flex-col items-start">
+      <div class="font-medium flex flex-row gap-1">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 text-yellow-400 h-4">
+        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+       </svg>
+       <span>{{_.episode}}</span>
+      </div>
+      <span class="line-clamp-2">
+       {{_.title}}
+      </span>
+     </div>
     </a>
    </swiper-slide>
   </swiper-container>
